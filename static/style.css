@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.movie {
+	color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+	resize: none;
+}
+
+.movie-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+
+.movie-content > div {
+    margin:20px;
+}
+
+.btn-block{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: #e4e0e0;
+}
+
+#main-app {
+	background-image: url("../static/background.jpg");
+	background-color: #181818;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+
+.footer {
+	color: #e4e0e0;
+	text-align:right;
+	position: fixed;
+ 	bottom: 20px;
+ 	right: 20px;
+ 	width: 100%;
+}
+
+h1 {
+
+    color: #00ffcb;
+    margin-top: 30px;
+    text-shadow: #000000 0px 0px 13px;
+	font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+ }
+
+
+
+#autoComplete {
+  background-position: 98% ;
+}
+
+
+
+h3 {
+    margin-bottom: 20px;  
+	font-size: 18px;
+	color: white;
+}
+
+#loader {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../static/loader.gif");
+	background-size: 30%;
+
+	background-position: 50% 50%;
+	background-color: rgba(0, 0, 0, 1);
+	background-repeat: no-repeat;
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    #main-content {
+      display: block;
+	  
+    }
+
+
+    .poster-sm {
+      display: none;
+    }
+    #details {
+		margin-left: 30px;
+	}
+    #loader {
+		display: none;
+		position: fixed;
+		z-index: 100;
+		left: 0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		background-image: url("../static/loader.gif");
+		background-size: 60%;
+		background-position: 50% 50%;
+		background-color: rgba(0, 0, 0, 1);
+		background-repeat: no-repeat;
+		-webkit-transition: background-image 0.2s ease-in-out;
+		transition: background-image 0.2s ease-in-out;
+	}
+	.modal-body{
+		display: block;
+	}
+	.profile-pic {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .poster-lg {
+    display: none;
+   }
+   #details {
+	margin-left: 70px;
+}
+
+	#main-content {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.modal-body {
+		display: flex;
+	}
+
+}
+
+.poster{
+    -webkit-box-shadow: 0px 1px 15px 4px rgba(250,250,250,1);
+    -moz-box-shadow: 0px 1px 15px 4px rgba(250,250,250,1);
+    box-shadow: 0px 1px 15px 4px rgba(250,250,250,1);
+}
+
+.card:hover {
+	cursor: pointer;
+}
+
+.fig {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: brightness(50%);
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	opacity: 0;
+	-moz-transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.fig:hover {
+	opacity: 1;	
+
+	-moz-transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.card-btn {
+	border-radius: 20px;
+}
+
+
+
+.fail {
+	display: none;
+
+}
